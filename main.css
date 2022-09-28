@@ -1,0 +1,91 @@
+@import url("fonts/kosko-bold/style.css");
+
+:root {
+    --color-primary: #C29464;
+    --color-secondary: #EEB780;
+    --color-text: #865C3D;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Kosko, sans-serif;
+    color: var(--color-text);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #C29464B2;
+    border-radius: 5px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text);
+    border-radius: 5px;
+}
+
+
+body {
+    background: linear-gradient(var(--color-secondary), transparent 1px), linear-gradient(90deg, var(--color-secondary), transparent 1px);
+    background-color: var(--color-primary) !important;
+    background-size: 55px 55px;
+    padding-top: 40px;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    margin: 0 0 3px 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+.content {
+    background-color: var(--color-secondary);
+    margin: 0 100px 115px 100px;
+    border-radius: 25px;
+    font-size: 20px;
+    overflow: auto;
+    padding: 18px;
+    height: 80%;
+    z-index: 5;
+
+    white-space: pre-line;
+}
+
+img {
+    z-index: 1;
+    position: fixed;
+}
+
+#racoon {
+    width: 124px;
+    height: 111px;
+
+    top: 29vh;
+}
+
+#foxy {
+    bottom: 23vh;
+    right: 0;
+}
